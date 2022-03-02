@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.c{
+    display: flex;
+}
+.logo{
+    background-color: red;
+    width: 30%;
+}
+.blue{
+    width: 70%;
+}

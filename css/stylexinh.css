@@ -1,0 +1,29 @@
+body{
+    font-size: 14px;
+    font-family: 'SFD-bold';
+    margin: 0;
+    padding: 0;
+}
+.head{
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    background-color: #db272e;
+}
+.logo{
+    align-items: center;
+    margin: 10px 8px;
+}
+.head_nav-item{
+    
+    display: inline-block;
+    justify-content: center;
+    color: #fff;
+    margin: 10px 18px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.head_nav-list{
+    list-style-type: circle !important;
+    
+}

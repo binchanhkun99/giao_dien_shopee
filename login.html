@@ -1,0 +1,53 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/login-form.css">
+        <title>Form -Login</title>
+    </head>
+    <body>
+    <div class="container">
+        <form class="login-form">
+            <h1>Đăng nhập</h1>
+            <div class="form-input">
+                <input type="text">
+                <label>Username</label>
+            </div>
+            <div class="form-input">
+                <input type="password" id="iduser">
+                <label>Password</label> 
+            </div>
+            <button type="submit">Đăng nhập</button>
+            <span>Bạn chưa có tài khoản? Đăng ký <a href="">Tại đây</a></span>
+            <div id="word"></div>
+        </form>
+    
+    </div>
+    <script>
+        const formLogin = document.querySelectorAll(".form-input input")
+        const formLabel = document.querySelectorAll(".form-input label")
+        for(let i =0;i<2;i++){
+            formLogin[i].addEventListener("mouseover",function(){
+                formLabel[i].classList.add("change")
+            })
+            formLogin[i].addEventListener("mouseout",function(){
+                if(formLogin[i].value =="") {
+                    formLabel[i].classList.remove("change")
+                }
+                
+            })
+        }
+    </script>   
+    <script>
+                var iduser=document.getElementById("iduser");
+        var word=document.getElementById("word");
+        iduser.addEventListener("keyup",a);
+        function a(){
+            word.innerHTML=iduser.value;
+            
+            
+        }
+    </script>                                     
+    </body>
+    </html>
+                                            
